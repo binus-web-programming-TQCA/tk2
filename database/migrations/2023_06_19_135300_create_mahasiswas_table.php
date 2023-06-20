@@ -14,8 +14,13 @@ return new class extends Migration
         Schema::create('mahasiswas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('nilai_quiz');
+            $table->integer('nilai_tugas');
+            $table->integer('nilai_absensi');
+            $table->integer('nilai_praktek');
+            $table->integer('nilai_uas');
+            $table->integer('nilai_final');
             $table->string('grade');
-            $table->integer('nilai');
             $table->timestamps();
         });
     }
