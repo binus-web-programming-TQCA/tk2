@@ -31,7 +31,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th>Nilai</th>
+                            <th>Nilai Akhir</th>
                             <th>Grade</th>
                         </tr>
                         </thead>
@@ -40,7 +40,7 @@
                             <tr>
                                 <td>{{$mahasiswa->id}}</td>
                                 <td>{{$mahasiswa->name}}</td>
-                                <td>{{$mahasiswa->nilai}}</td>
+                                <td>{{$mahasiswa->nilai_akhir}}</td>
                                 <td>{{$mahasiswa->grade}}</td>
                             </tr>
                         @endforeach

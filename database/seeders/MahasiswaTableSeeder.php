@@ -21,7 +21,7 @@ class MahasiswaTableSeeder extends Seeder
             'nilai_absensi' => 98,
             'nilai_praktek' => 98,
             'nilai_uas' => 98,
-            'nilai_final' => 98,
+            'nilai_akhir' => 98,
             'grade' => 'A',
         ]);
 
@@ -32,7 +32,7 @@ class MahasiswaTableSeeder extends Seeder
             'nilai_absensi' => 85,
             'nilai_praktek' => 85,
             'nilai_uas' => 85,
-            'nilai_final' => 85,
+            'nilai_akhir' => 85,
             'grade' => 'B',
         ]);
 
@@ -43,7 +43,7 @@ class MahasiswaTableSeeder extends Seeder
             'nilai_absensi' => 72,
             'nilai_praktek' => 72,
             'nilai_uas' => 72,
-            'nilai_final' => 72,
+            'nilai_akhir' => 72,
             'grade' => 'C',
         ]);
 
@@ -54,7 +54,7 @@ class MahasiswaTableSeeder extends Seeder
             'nilai_absensi' => 60,
             'nilai_praktek' => 60,
             'nilai_uas' => 60,
-            'nilai_final' => 60,
+            'nilai_akhir' => 60,
             'grade' => 'D',
         ]);
 

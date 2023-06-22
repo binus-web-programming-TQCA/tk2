@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('nilai_absensi');
             $table->integer('nilai_praktek');
             $table->integer('nilai_uas');
-            $table->integer('nilai_final');
+            $table->integer('nilai_akhir');
             $table->string('grade');
             $table->timestamps();
         });

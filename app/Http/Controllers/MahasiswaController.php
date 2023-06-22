@@ -32,20 +32,30 @@ class MahasiswaController extends Controller
         // Validasi input
         $validator = Validator::make($request->all(), [
             'name' => 'required',
-            'nilai' => 'required'
+            'nilai_quiz' => 'required',
+            'nilai_tugas' => 'required',
+            'nilai_absensi' => 'required',
+            'nilai_praktek' => 'required',
+            'nilai_uas' => 'required',
         ]);
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        $nilai = $request->input('nilai');
-        if ($nilai <= 65) {
+        $nilaiQuiz = $request->input('nilai_quiz'); // 15%
+        $nilaiTugas = $request->input('nilai_tugas'); // 20%
+        $nilaiAbsensi = $request->input('nilai_absensi'); // 10%
+        $nilaiPraktek = $request->input('nilai_praktek'); // 15%
+        $nilaiUas = $request->input('nilai_uas'); // 30%
+
+        $nilaiAkhir = ($nilaiQuiz + $nilaiTugas + $nilaiAbsensi + $nilaiPraktek + $nilaiUas) / 5;
+        if ($nilaiAkhir <= 65) {
             $grade = 'D';
-        } elseif ($nilai <= 75) {
+        } elseif ($nilaiAkhir <= 75) {
             $grade = 'C';
-        } elseif ($nilai <= 85) {
+        } elseif ($nilaiAkhir <= 85) {
             $grade = 'B';
-        } elseif ($nilai <= 100) {
+        } elseif ($nilaiAkhir <= 100) {
             $grade = 'A';
         } else {
             $grade = 'E';
@@ -53,7 +63,12 @@ class MahasiswaController extends Controller
 
         $mahasiswa = new Mahasiswa();
         $mahasiswa->name = $request->input('name');
-        $mahasiswa->nilai = $nilai;
+        $mahasiswa->nilai_quiz = $nilaiQuiz;
+        $mahasiswa->nilai_tugas = $nilaiTugas;
+        $mahasiswa->nilai_absensi = $nilaiAbsensi;
+        $mahasiswa->nilai_praktek = $nilaiPraktek;
+        $mahasiswa->nilai_uas = $nilaiUas;
+        $mahasiswa->nilai_akhir = $nilaiAkhir;
         $mahasiswa->grade = $grade;
         $mahasiswa->save();
 
