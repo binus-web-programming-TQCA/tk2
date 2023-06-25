@@ -13,7 +13,7 @@
 - PHP (version 8.2.4)
 - Composer
 - Docker (optional)
-- MySQL (required if don't have docker)
+- MySQL (required if you don't have docker)
 
 ## Getting Started
 
