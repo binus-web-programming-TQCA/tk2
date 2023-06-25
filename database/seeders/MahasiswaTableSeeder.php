@@ -15,6 +15,61 @@ class MahasiswaTableSeeder extends Seeder
     {
         // Seed the users table with dummy data
         Mahasiswa::create([
+            'name' => 'SAMUEL GEVIN',
+            'nilai_quiz' => 100,
+            'nilai_tugas' => 100,
+            'nilai_absensi' => 100,
+            'nilai_praktek' => 100,
+            'nilai_uas' => 100,
+            'nilai_akhir' => 100,
+            'grade' => 'A',
+        ]);
+
+        Mahasiswa::create([
+            'name' => 'ASTO ARIANTO MIWANDA',
+            'nilai_quiz' => 100,
+            'nilai_tugas' => 100,
+            'nilai_absensi' => 100,
+            'nilai_praktek' => 100,
+            'nilai_uas' => 100,
+            'nilai_akhir' => 100,
+            'grade' => 'A',
+        ]);
+
+        Mahasiswa::create([
+            'name' => 'FAJRIANTO MANUNGKI',
+            'nilai_quiz' => 100,
+            'nilai_tugas' => 100,
+            'nilai_absensi' => 100,
+            'nilai_praktek' => 100,
+            'nilai_uas' => 100,
+            'nilai_akhir' => 100,
+            'grade' => 'A',
+        ]);
+
+        Mahasiswa::create([
+            'name' => 'SEKAR AYU DEWI KARTINI',
+            'nilai_quiz' => 100,
+            'nilai_tugas' => 100,
+            'nilai_absensi' => 100,
+            'nilai_praktek' => 100,
+            'nilai_uas' => 100,
+            'nilai_akhir' => 100,
+            'grade' => 'A',
+        ]);
+
+        Mahasiswa::create([
+            'name' => 'RIZKY ALDI SAPUTRA',
+            'nilai_quiz' => 100,
+            'nilai_tugas' => 100,
+            'nilai_absensi' => 100,
+            'nilai_praktek' => 100,
+            'nilai_uas' => 100,
+            'nilai_akhir' => 100,
+            'grade' => 'A',
+        ]);
+
+        Mahasiswa::create([
             'name' => 'John Doe',
             'nilai_quiz' => 98,
             'nilai_tugas' => 98,
@@ -38,6 +93,17 @@ class MahasiswaTableSeeder extends Seeder
 
         Mahasiswa::create([
             'name' => 'Jane Smith',
+            'nilai_quiz' => 72,
+            'nilai_tugas' => 72,
+            'nilai_absensi' => 72,
+            'nilai_praktek' => 72,
+            'nilai_uas' => 72,
+            'nilai_akhir' => 72,
+            'grade' => 'C',
+        ]);
+
+        Mahasiswa::create([
+            'name' => 'Foo Bee',
             'nilai_quiz' => 72,
             'nilai_tugas' => 72,
             'nilai_absensi' => 72,
