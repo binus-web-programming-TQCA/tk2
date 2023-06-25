@@ -7,6 +7,55 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+## Prerequisites
+
+- PHP (version 8.2.4)
+- Composer
+- Docker (optional)
+- MySQL (required if don't have docker)
+
+## Getting Started
+
+Follow these instructions to get the project up and running on your local machine.
+
+### Installation
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/binus-web-programming-TQCA/tk2.git
+   
+2. Navigate to the project directory:
+
+    ```shell
+   cd tk2
+   
+3. Install PHP dependencies:
+
+    ```shell
+   cd tk2
+   
+4. Create a copy of the .env.example file and rename it to .env:
+
+    ```shell
+   cp .env.example .env
+   
+5. Run MySQL on docker (if have docker):
+
+    ```shell
+   docker-compose up -d    
+
+6. Migrate and seed database:
+
+    ```shell
+   make migrate
+   
+7. Run project:
+
+    ```shell
+   make run
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
